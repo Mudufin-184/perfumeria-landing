@@ -11,15 +11,25 @@
   <!-- Header -->
   <header class="header">
     <nav class="navbar">
-      <div class="logo">Perfumería</div>
-      <ul class="nav-links">
-        <li><a href="#inicio">Inicio</a></li>
-        <li><a href="#coleccion">Colección</a></li>
-        <li><a href="#promociones">Promociones</a></li>
-        <li><a href="#contacto">Contacto</a></li>
-      </ul>
-      <button class="cta-button">Explorar Colección</button>
-    </nav>
+        <div class="logo">Perfumería</div>
+        
+        <!-- Botón de menú hamburguesa (para pantallas pequeñas) -->
+        <div class="menu-toggle" id="mobile-menu">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </div>
+      
+        <ul class="nav-links" id="nav-menu">
+          <li><a href="#inicio">Inicio</a></li>
+          <li><a href="#coleccion">Colección</a></li>
+          <li><a href="#promociones">Promociones</a></li>
+          <li><a href="#contacto">Contacto</a></li>
+        </ul>
+        
+        <button class="cta-button">Explorar Colección</button>
+      </nav>
+      
   </header>
 
   <!-- Hero Section -->
@@ -29,41 +39,65 @@
       <p>Explora nuestra exclusiva colección de fragancias premium.</p>
       <button class="hero-button">Compra Ahora</button>
     </div>
-    <img src="path-to-image/fragancia.jpg" alt="Fragancia Premium" class="hero-image">
+    <img src="img/fragancia5.jpg" alt="Fragancia Premium" class="hero-image">
   </section>
 
-<!-- Carrusel de Fragancias -->
+<!-- Carrusel de Fragancias y Sobre Nosotros -->
 <section class="carousel-section" id="coleccion">
     <h2>Carrusel de Fragancias</h2>
-    <div class="carousel">
-      <div class="carousel-item">
-        <img src="img/fragancia1.jpg" alt="Fragancia 1">
-        <div class="legend">
-          <h3>Can Can</h3>
-          <p>Flor de clementina, nectarina...</p>
+    <div class="carousel-container">
+      <!-- Carrusel de Fragancias -->
+      <div class="carousel">
+        <div class="carousel-item">
+          <img src="img/fragancia1.jpg" alt="Fragancia 1">
+          <div class="legend">
+            <h3>Can Can</h3>
+            <p>Flor de clementina, nectarina...</p>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="img/fragancia2.jpg" alt="Fragancia 2">
+          <div class="legend">
+            <h3>Amor Amor</h3>
+            <p>Vainilla, bayas rojas...</p>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="img/fragancia3.jpg" alt="Fragancia 3">
+          <div class="legend">
+            <h3>Mon Paris</h3>
+            <p>Fresa, pera, frambuesa...</p>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="img/fragancia4.jpg" alt="Fragancia 4">
+          <div class="legend">
+            <h3>Insolence</h3>
+            <p>Fragancia floral intensa...</p>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="img/fragancia5.jpg" alt="Fragancia 5">
+          <div class="legend">
+            <h3>Be Delicious</h3>
+            <p>Notas de manzana verde...</p>
+          </div>
         </div>
       </div>
-      <div class="carousel-item">
-        <img src="img/fragancia2.jpg" alt="Fragancia 2">
-        <div class="legend">
-          <h3>Amor Amor</h3>
-          <p>Vainilla, bayas rojas...</p>
-        </div>
-      </div>
-      <div class="carousel-item">
-        <img src="img/fragancia3.jpg" alt="Fragancia 3">
-        <div class="legend">
-          <h3>Mon Paris</h3>
-          <p>Fresa, pera, frambuesa...</p>
-        </div>
+  
+      <!-- Sobre Nosotros -->
+      <div class="about-us">
+        <h3>Sobre Nosotros</h3>
+        <p>Somos una perfumería dedicada a ofrecer las fragancias más exclusivas y cautivadoras. Nuestras esencias son seleccionadas con sumo cuidado para garantizar que cada cliente encuentre su aroma ideal.</p>
+        <p>Descubre nuestras colecciones de fragancias que evocan elegancia, frescura y sofisticación.</p>
       </div>
     </div>
   </section>
   
 
 <!-- Sección de Colección -->
-<section class="collection">
-    <h2>Colección Destacada</h2>
+<section class="collection" id="promociones">
+    <h2>Colección Destacada Y Promociones</h2>
     <div class="collection-grid">
       <div class="product-card">
         <img src="img/fragancia1.jpg" alt="Fragancia 1">
@@ -131,58 +165,88 @@
         <p>Explosión floral exquisita...</p>
         <button class="view-more">Ver Más</button>
       </div>
-    </div>
-  </section>
-  
-
-  <!-- Formulario de Fragancias -->
-  <section class="fragrance-form">
-    <h2>Encuentra tu Fragancia Ideal</h2>
-    <form id="fragranceForm">
-      <div class="form-group">
-        <label for="gender">Género:</label>
-        <select id="gender" name="gender">
-          <option value="">Selecciona...</option>
-          <option value="mujer">Mujer</option>
-          <option value="hombre">Hombre</option>
-        </select>
+      <div class="product-card">
+        <img src="img/fragancia2.jpg" alt="Fragancia Amor Amor">
+        <h3>Amor Amor</h3>
+        <p>Vainilla, bayas rojas, grosellas negras con toronja y naranja...</p>
+        <button class="view-more">Ver Más</button>
       </div>
-      <div class="form-group">
-        <label for="type">Tipo de Fragancia:</label>
-        <select id="type" name="type">
-          <option value="">Selecciona...</option>
-          <option value="frutal">Frutal</option>
-          <option value="floral">Floral</option>
-          <option value="fresca">Fresca</option>
-          <option value="cítrica">Cítrica</option>
-          <option value="amaderada">Amaderada</option>
-        </select>
+    </div>
+  </section>
+
+<!-- Sección Combinada -->
+<section class="combined-section">
+    <div class="fragrance-form">
+      <h2>Encuentra tu Fragancia Ideal</h2>
+      <form id="fragranceForm">
+        <div class="form-group">
+          <label for="gender">Género:</label>
+          <select id="gender" name="gender">
+            <option value="">Selecciona...</option>
+            <option value="mujer">Mujer</option>
+            <option value="hombre">Hombre</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label for="type">Tipo de Fragancia:</label>
+          <select id="type" name="type">
+            <option value="">Selecciona...</option>
+            <option value="frutal">Frutal</option>
+            <option value="floral">Floral</option>
+            <option value="fresca">Fresca</option>
+            <option value="cítrica">Cítrica</option>
+            <option value="amaderada">Amaderada</option>
+          </select>
+        </div>
+        <button type="submit" class="cta-button">Obtener Recomendación</button>
+      </form>
+      <p id="recommendation" class="recommendation-result"></p>
+    </div>
+    <div class="testimonials">
+        <h2>Testimonios de Clientes</h2>
+        <div class="testimonials-container">
+          <div class="testimonial">
+            <blockquote>“¡Increíble fragancia!”</blockquote>
+            <p>- Cliente 1</p>
+          </div>
+          <div class="testimonial">
+            <blockquote>“El aroma dura todo el día, estoy encantado.”</blockquote>
+            <p>- Cliente 2</p>
+          </div>
+          <div class="testimonial">
+            <blockquote>“He recibido muchos cumplidos gracias a esta fragancia.”</blockquote>
+            <p>- Cliente 3</p>
+          </div>
+          <div class="testimonial">
+            <blockquote>“La mejor fragancia que he probado, definitivamente la volveré a comprar.”</blockquote>
+            <p>- Cliente 4</p>
+          </div>
+          <div class="testimonial">
+            <blockquote>“Excelente calidad y precio. Muy recomendable.”</blockquote>
+            <p>- Cliente 5</p>
+          </div>
+        </div>
+    </div>         
+</section>
+
+<!-- Footer -->
+<footer class="footer">
+    <div class="footer-content">
+      <div class="social-media">
+        <h3>Síguenos en:</h3>
+        <a href="#">Facebook</a>
+        <a href="#">Instagram</a>
       </div>
-      <button type="submit" class="cta-button">Obtener Recomendación</button>
-    </form>
-    <p id="recommendation" class="recommendation-result"></p>
-  </section>
-
-  <!-- Testimonios -->
-  <section class="testimonials">
-    <h2>Testimonios de Clientes</h2>
-    <div class="testimonial">
-      <blockquote>“¡Increíble fragancia!”</blockquote>
-      <p>- Cliente 1</p>
+      <div class="contact-info">
+        <h3>Información de Contacto</h3>
+        <p>Dirección: Calle Principal, Ciudad</p>
+        <p>Horario: Lun-Vie 9AM - 6PM</p>
+        <p>Teléfono: (123) 456-7890</p>
+        <p>Email: contacto@tuempresa.com</p>
+      </div>
     </div>
-    <!-- Más testimonios -->
-  </section>
-
-  <!-- Footer -->
-  <footer class="footer">
-    <div class="social-media">
-      <a href="#">Facebook</a>
-      <a href="#">Instagram</a>
-    </div>
-    <p>Dirección: Calle Principal, Ciudad</p>
-    <p>Horario: Lun-Vie 9AM - 6PM</p>
   </footer>
-
+  
   <script src="js/main.js"></script>
 </body>
 </html>
