@@ -432,7 +432,7 @@ body {
   }
   
   /* Responsive Design */
-  @media (max-width: 768px) {
+  /* @media (max-width: 768px) {
     .navbar {
       flex-direction: column;
     }
@@ -462,4 +462,4 @@ body {
       grid-template-columns: 1fr;
     }
   }
-  
+   */
