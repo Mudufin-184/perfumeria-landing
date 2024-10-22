@@ -1,14 +1,188 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Perfumeria</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Perfumería Landing Page</title>
+  <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    <section>
-        <H1>Desarrollo de Perfumeria</H1>
-    </section>
-    
+
+  <!-- Header -->
+  <header class="header">
+    <nav class="navbar">
+      <div class="logo">Perfumería</div>
+      <ul class="nav-links">
+        <li><a href="#inicio">Inicio</a></li>
+        <li><a href="#coleccion">Colección</a></li>
+        <li><a href="#promociones">Promociones</a></li>
+        <li><a href="#contacto">Contacto</a></li>
+      </ul>
+      <button class="cta-button">Explorar Colección</button>
+    </nav>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero" id="inicio">
+    <div class="hero-content">
+      <h1>Descubre la Esencia de la Elegancia</h1>
+      <p>Explora nuestra exclusiva colección de fragancias premium.</p>
+      <button class="hero-button">Compra Ahora</button>
+    </div>
+    <img src="path-to-image/fragancia.jpg" alt="Fragancia Premium" class="hero-image">
+  </section>
+
+<!-- Carrusel de Fragancias -->
+<section class="carousel-section" id="coleccion">
+    <h2>Carrusel de Fragancias</h2>
+    <div class="carousel">
+      <div class="carousel-item">
+        <img src="img/fragancia1.jpg" alt="Fragancia 1">
+        <div class="legend">
+          <h3>Can Can</h3>
+          <p>Flor de clementina, nectarina...</p>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img src="img/fragancia2.jpg" alt="Fragancia 2">
+        <div class="legend">
+          <h3>Amor Amor</h3>
+          <p>Vainilla, bayas rojas...</p>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img src="img/fragancia3.jpg" alt="Fragancia 3">
+        <div class="legend">
+          <h3>Mon Paris</h3>
+          <p>Fresa, pera, frambuesa...</p>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+
+<!-- Sección de Colección -->
+<section class="collection">
+    <h2>Colección Destacada</h2>
+    <div class="collection-grid">
+      <div class="product-card">
+        <img src="img/fragancia1.jpg" alt="Fragancia 1">
+        <h3>Can Can</h3>
+        <p>Flor de clementina, nectarina...</p>
+        <button class="view-more">Ver Más</button>
+      </div>
+      <div class="product-card">
+        <img src="img/fragancia2.jpg" alt="Fragancia 2">
+        <h3>Amor Amor</h3>
+        <p>Vainilla, bayas rojas...</p>
+        <button class="view-more">Ver Más</button>
+      </div>
+      <div class="product-card">
+        <img src="img/fragancia3.jpg" alt="Fragancia 3">
+        <h3>Mon Paris</h3>
+        <p>Fresa, pera, frambuesa...</p>
+        <button class="view-more">Ver Más</button>
+      </div>
+      <div class="product-card">
+        <img src="img/fragancia4.jpg" alt="Fragancia 4">
+        <h3>Insolence</h3>
+        <p>Fragancia floral intensa...</p>
+        <button class="view-more">Ver Más</button>
+      </div>
+      <div class="product-card">
+        <img src="img/fragancia5.jpg" alt="Fragancia 5">
+        <h3>Be Delicious</h3>
+        <p>Notas de manzana verde...</p>
+        <button class="view-more">Ver Más</button>
+      </div>
+      <div class="product-card">
+        <img src="img/fragancia6.jpg" alt="Fragancia 6">
+        <h3>Love Me Tous</h3>
+        <p>Fragancia delicada y elegante...</p>
+        <button class="view-more">Ver Más</button>
+      </div>
+      <div class="product-card">
+        <img src="img/fragancia7.jpg" alt="Fragancia 7">
+        <h3>Viva la Juicy</h3>
+        <p>Notas frutales y florales...</p>
+        <button class="view-more">Ver Más</button>
+      </div>
+      <div class="product-card">
+        <img src="img/fragancia8.jpg" alt="Fragancia 8">
+        <h3>To Be Woman EDP</h3>
+        <p>Mezcla moderna de esencias...</p>
+        <button class="view-more">Ver Más</button>
+      </div>
+      <div class="product-card">
+        <img src="img/fragancia9.jpg" alt="Fragancia 9">
+        <h3>Daisy Eau So Fresh</h3>
+        <p>Aroma floral fresco y juvenil...</p>
+        <button class="view-more">Ver Más</button>
+      </div>
+      <div class="product-card">
+        <img src="img/fragancia10.jpg" alt="Fragancia 10">
+        <h3>Bloom</h3>
+        <p>Rosas frescas y elegantes...</p>
+        <button class="view-more">Ver Más</button>
+      </div>
+      <div class="product-card">
+        <img src="img/fragancia11.jpg" alt="Fragancia 11">
+        <h3>Flowerbomb</h3>
+        <p>Explosión floral exquisita...</p>
+        <button class="view-more">Ver Más</button>
+      </div>
+    </div>
+  </section>
+  
+
+  <!-- Formulario de Fragancias -->
+  <section class="fragrance-form">
+    <h2>Encuentra tu Fragancia Ideal</h2>
+    <form id="fragranceForm">
+      <div class="form-group">
+        <label for="gender">Género:</label>
+        <select id="gender" name="gender">
+          <option value="">Selecciona...</option>
+          <option value="mujer">Mujer</option>
+          <option value="hombre">Hombre</option>
+        </select>
+      </div>
+      <div class="form-group">
+        <label for="type">Tipo de Fragancia:</label>
+        <select id="type" name="type">
+          <option value="">Selecciona...</option>
+          <option value="frutal">Frutal</option>
+          <option value="floral">Floral</option>
+          <option value="fresca">Fresca</option>
+          <option value="cítrica">Cítrica</option>
+          <option value="amaderada">Amaderada</option>
+        </select>
+      </div>
+      <button type="submit" class="cta-button">Obtener Recomendación</button>
+    </form>
+    <p id="recommendation" class="recommendation-result"></p>
+  </section>
+
+  <!-- Testimonios -->
+  <section class="testimonials">
+    <h2>Testimonios de Clientes</h2>
+    <div class="testimonial">
+      <blockquote>“¡Increíble fragancia!”</blockquote>
+      <p>- Cliente 1</p>
+    </div>
+    <!-- Más testimonios -->
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="social-media">
+      <a href="#">Facebook</a>
+      <a href="#">Instagram</a>
+    </div>
+    <p>Dirección: Calle Principal, Ciudad</p>
+    <p>Horario: Lun-Vie 9AM - 6PM</p>
+  </footer>
+
+  <script src="js/main.js"></script>
 </body>
 </html>
