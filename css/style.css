@@ -33,9 +33,8 @@ body {
     border-radius: 10px;
   }
   
-  /* Header Styles */
-/* General Navbar Styles */
-.navbar {
+  /* Navbar Styles */
+  .navbar {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -57,7 +56,6 @@ body {
   
   .nav-links a {
     color: #FFFFFF;
-    text-decoration: none;
     font-size: 1rem;
   }
   
@@ -77,7 +75,6 @@ body {
     background-color: #C8CC21;
   }
   
-  /* Menu Toggle (Hamburguesa) */
   .menu-toggle {
     display: none;
     flex-direction: column;
@@ -92,10 +89,10 @@ body {
     transition: 0.4s;
   }
   
-  /* Responsive Styles */
+  /* Responsive Navbar */
   @media (max-width: 768px) {
     .nav-links {
-      display: none; /* Ocultar el menú en pantallas pequeñas */
+      display: none;
       flex-direction: column;
       position: absolute;
       top: 60px;
@@ -106,15 +103,15 @@ body {
     }
   
     .nav-links.active {
-      display: flex; /* Mostrar el menú cuando esté activo */
+      display: flex;
     }
   
     .menu-toggle {
-      display: flex; /* Mostrar el menú hamburguesa en pantallas pequeñas */
+      display: flex;
     }
   
     .cta-button {
-      display: none; /* Ocultar el botón CTA en pantallas pequeñas */
+      display: none;
     }
   
     .nav-links a {
@@ -143,7 +140,7 @@ body {
   }
   
   .hero-content {
-    background-color: rgba(85, 85, 85, 0.57); /* Fondo transparente para legibilidad */
+    background-color: rgba(85, 85, 85, 0.57);
     padding: 50px;
     max-width: 500px;
     margin: 1rem;
@@ -171,14 +168,14 @@ body {
   .hero-button:hover {
     background-color: #C8CC21;
   }
-
+  
   .hero img {
     width: 400px;
     height: 400px;
   }
   
- /* Sección Carrusel y Sobre Nosotros */
-.carousel-section {
+  /* Carousel and About Us Section */
+  .carousel-section {
     margin: 40px;
     justify-content: center;
     padding: 2rem;
@@ -192,22 +189,21 @@ body {
     gap: 2rem;
   }
   
-  /* Estilos para el Carrusel */
   .carousel {
     margin-top: 16px;
     flex: 1;
     display: flex;
     flex-direction: column;
-    align-items: center; /* Alinea los items del carrusel al centro horizontalmente */
-    justify-content: center; /* Centra el contenido verticalmente */
+    align-items: center;
+    justify-content: center;
     gap: 1.5rem;
-    text-align: center; /* Asegura que el texto esté centrado */
+    text-align: center;
   }
   
   .carousel-item {
     display: flex;
     flex-direction: column;
-    align-items: center; /* Centra la imagen y la leyenda */
+    align-items: center;
   }
   
   .carousel-item img {
@@ -224,14 +220,13 @@ body {
     padding: 1rem;
     border-radius: 5px;
     margin-top: 0.5rem;
-    width: 100%; /* Asegura que la leyenda ocupe todo el ancho disponible */
-    text-align: center; /* Centra el texto dentro de la leyenda */
+    width: 100%;
+    text-align: center;
   }
-   
-  /* Estilos para la Sección Sobre Nosotros */
+  
   .about-us {
     margin-top: 32px;
-    flex: 1; /* La sección de Sobre Nosotros ocupa espacio */
+    flex: 1;
     background-color: #FFFFFF;
     padding: 2rem;
     border-radius: 10px;
@@ -249,10 +244,10 @@ body {
     margin-bottom: 1rem;
   }
   
-  /* Diseño Responsivo */
+  /* Responsive Carousel and About Us */
   @media (max-width: 768px) {
     .carousel-container {
-      flex-direction: column; /* Pone el carrusel y Sobre Nosotros en columnas en pantallas pequeñas */
+      flex-direction: column;
     }
   
     .carousel-item img {
@@ -264,7 +259,6 @@ body {
       margin-top: 2rem;
     }
   }
-  
   
   /* Collection Section */
   .collection {
@@ -298,8 +292,8 @@ body {
     background-color: #C8CC21;
   }
   
-/* Sección Combinada */
-.combined-section {
+  /* Combined Section */
+  .combined-section {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
@@ -308,7 +302,7 @@ body {
   
   .fragrance-form, .testimonials {
     flex: 1;
-    min-width: 280px; /* Ajuste para pantallas pequeñas */
+    min-width: 280px;
   }
   
   .fragrance-form {
@@ -380,7 +374,6 @@ body {
     color: #333333;
   }
   
-  /* Estilos Responsivos */
   @media (max-width: 768px) {
     .combined-section {
       flex-direction: column;
@@ -431,35 +424,3 @@ body {
     }
   }
   
-  /* Responsive Design */
-  /* @media (max-width: 768px) {
-    .navbar {
-      flex-direction: column;
-    }
-  
-    .nav-links {
-      flex-direction: column;
-      gap: 0.5rem;
-    }
-  
-    .hero {
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-      text-align: center;
-    }
-  
-    .hero-content {
-      padding: 1rem;
-    }
-  
-    .carousel-item img {
-      height: 150px;
-      width: 150px;
-    }
-  
-    .collection-grid {
-      grid-template-columns: 1fr;
-    }
-  }
-   */
