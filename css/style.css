@@ -175,94 +175,100 @@ body {
 
 /* Hero Section */
 .hero {
-    width: 95%;
-    height: 80vh;
-    background: url('../img/principal-foto-bg.png') no-repeat center;
-    background-size: cover;
-    display: flex;
-    justify-content: center; /* Centra el contenido */
-    align-items: center;
-    padding: 2rem;
-    flex-wrap: wrap;
-    text-align: center;
-    overflow: hidden; /* Previene el scroll */
+  width: 100%; /* Asegura que el contenedor ocupe todo el ancho */
+  height: 100vh;
+  background: url('../img/principal-foto-bg.png') no-repeat center;
+  background-size: cover;
+  display: flex;
+  justify-content: center; /* Centra el contenido */
+  align-items: center;
+  padding: 2rem;
+  flex-wrap: wrap;
+  text-align: center;
+  overflow: hidden; /* Previene el scroll horizontal */
+  box-sizing: border-box; /* Incluye el padding en el ancho total */
 }
 
 .hero-content {
-    background-color: rgba(85, 85, 85, 0.57);
-    padding: 2rem; /* Usar rem para mejorar la responsividad */
-    max-width: 90%; /* Permite mejor ajuste en pantallas pequeñas */
-    margin: 1rem auto; /* Centrar el contenido con margen automático */
-    color: #FFFFFF;
-    box-sizing: border-box; /* Incluye el padding en el ancho total */
+  background-color: rgba(85, 85, 85, 0.57);
+  padding: 2rem; /* Usar rem para mejorar la responsividad */
+  max-width: 90%; /* Permite mejor ajuste en pantallas pequeñas */
+  margin: 1rem auto; /* Centrar el contenido con margen automático */
+  color: #FFFFFF;
+  box-sizing: border-box; /* Incluye el padding en el ancho total */
 }
 
 .hero-content h1 {
-    font-size: 2.5rem;
-    color: #CA5D1E;
+  font-size: 2.5rem;
+  color: #CA5D1E;
 }
 
 .hero-content p {
-    font-size: 1.2rem;
+  font-size: 1.2rem;
 }
 
 .hero-button {
-    background-color: #CA5D1E;
-    color: #FFFFFF;
-    border: none;
-    padding: 0.7rem 1.5rem;
-    border-radius: 5px;
-    margin-top: 1rem;
+  background-color: #CA5D1E;
+  color: #FFFFFF;
+  border: none;
+  padding: 0.7rem 1.5rem;
+  border-radius: 5px;
+  margin-top: 1rem;
 }
 
 .hero-button:hover {
-    background-color: #C8CC21;
+  background-color: #C8CC21;
 }
 
 .hero img {
-    width: 100%; /* Mantiene el ancho responsivo */
-    max-width: 400px; /* Limita el tamaño máximo de la imagen */
-    height: auto; /* Mantiene la proporción */
+  width: 100%; /* Mantiene el ancho responsivo */
+  max-width: 400px; /* Limita el tamaño máximo de la imagen */
+  height: auto; /* Mantiene la proporción */
 }
 
 /* Media Queries */
 @media (max-width: 768px) {
-    .hero {
-        flex-direction: column; /* Cambia a columna en pantallas más pequeñas */
-        height: auto; /* Ajustar la altura automática para el contenido */
-    }
+  .hero {
+      flex-direction: column; /* Cambia a columna en pantallas más pequeñas */
+      height: auto; /* Ajustar la altura automática para el contenido */
+      background-position: center top; /* Ajusta la posición del fondo */
+  }
 
-    .hero-content {
-        max-width: 100%; /* Permitir que el contenido ocupe todo el ancho */
-        padding: 1.5rem; /* Ajustar el padding */
-    }
+  .hero-content {
+      max-width: 100%; /* Permitir que el contenido ocupe todo el ancho */
+      padding: 1.5rem; /* Ajustar el padding */
+  }
 
-    .hero-content h1 {
-        font-size: 2rem; /* Ajustar tamaño del texto */
-    }
+  .hero-content h1 {
+      font-size: 2rem; /* Ajustar tamaño del texto */
+  }
 
-    .hero-content p {
-        font-size: 1rem; /* Ajustar tamaño del texto */
-    }
+  .hero-content p {
+      font-size: 1rem; /* Ajustar tamaño del texto */
+  }
 
-    .hero img {
-        width: 300px; /* Mantener la imagen responsiva */
-        max-width: 100%; /* Permitir que la imagen se ajuste al contenedor */
-    }
+  .hero img {
+      width: 300px; /* Mantener la imagen responsiva */
+      max-width: 100%; /* Permitir que la imagen se ajuste al contenedor */
+  }
 }
 
 @media (max-width: 480px) {
-    .hero-content h1 {
-        font-size: 1.5rem; /* Ajustar aún más el tamaño del texto */
-    }
+  .hero {
+      padding: 1rem; /* Reduce el padding en pantallas muy pequeñas */
+  }
 
-    .hero-content p {
-        font-size: 0.9rem; /* Ajustar aún más el tamaño del texto */
-    }
+  .hero-content h1 {
+      font-size: 1.5rem; /* Ajustar aún más el tamaño del texto */
+  }
 
-    .hero-button {
-        padding: 0.5rem 1rem; /* Ajustar el padding del botón */
-    }
+  .hero-content p {
+      font-size: 0.9rem; /* Ajustar aún más el tamaño del texto */
+  }
+
+  .hero-button {
+      padding: 0.5rem 1rem; /* Ajustar el padding del botón */
+  }
 }
 
   
