@@ -21,13 +21,10 @@ document.addEventListener('DOMContentLoaded', function () {
   });
 
   
-const menuToggle = document.getElementById('mobile-menu');
-const navMenu = document.getElementById('nav-menu');
-
-menuToggle.addEventListener('click', () => {
-  navMenu.classList.toggle('active');
+  document.getElementById('mobile-menu').addEventListener('click', function() {
+    var navMenu = document.getElementById('nav-menu');
+    navMenu.classList.toggle('active');
 });
-
 
 document.getElementById('fragranceForm').addEventListener('submit', function(e) {
     e.preventDefault();
