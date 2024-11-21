@@ -3,86 +3,71 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Perfumería para Hombre</title>
+  <title>Fragancias Frutales para Hombres</title>
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-
   <!-- Header -->
   <header class="header">
     <nav class="navbar">
       <div class="logo">Perfumería</div>
-      
-      <!-- Botón de menú hamburguesa (para pantallas pequeñas) -->
-      <div class="menu-toggle" id="mobile-menu">
-          <span class="bar"></span>
-          <span class="bar"></span>
-          <span class="bar"></span>
-      </div>
-    
-      <ul class="nav-links" id="nav-menu">
-          <li><a href="index.html">Inicio</a></li>
-          <li class="dropdown">
-              <a href="#" class="dropbtn">Portafolio</a>
-              <div class="dropdown-content">
-                  <a href="PortafolioMujer.html">Mujer</a>
-                  <a href="PortafolioHombre.html">Hombre </a>
-                  <a href="PortafolioTotal.html">Todo</a>
-              </div>
-          </li>
-          <li><a href="#coleccion">Colección</a></li>
-          <li><a href="#promociones">Promociones</a></li>
-          <li><a href="#contacto">Contacto</a></li>
-          
-      </ul>    
+      <a href="index.html" class="back-link">Volver</a>
     </nav>  
   </header>
-  
 
-<!-- Sección de Colección y Promociones para Hombre -->
-<section class="collection" id="promociones">
-    <h2>Colección Destacada y Promociones para Hombre</h2>
-    <div class="collection-grid">
-      <div class="product-card">
-        <img src="img/fraganciaHombre1.jpg" alt="Fragancia Hombre 1">
-        <h3>One Million</h3>
-        <p>Notas de canela, ámbar...</p>
-        <button class="view-more">Ver Más</button>
+  <!-- Contenido -->
+  <section class="collection">
+      <h2>Fragancias Frutales para Hombres</h2>
+
+      <!-- Recomendadas -->
+      <div class="category" id="recomendadas">
+          <h3>Recomendadas</h3>
+          <div class="collection-grid">
+              <div class="product-card">
+                  <h4>Bitter Peach</h4>
+                  <p>Durazno y caramelo.</p>
+              </div>
+              <div class="product-card">
+                  <h4>Just Different</h4>
+                  <p>Manzana Roja.</p>
+              </div>
+              <div class="product-card">
+                  <h4>Yves Saint Laurent</h4>
+                  <p>Manzana y Jengibre.</p>
+              </div>
+          </div>
       </div>
-      <div class="product-card">
-        <img src="img/fraganciaHombre2.jpg" alt="Fragancia Hombre 2">
-        <h3>Bleu de Chanel</h3>
-        <p>Aroma fresco y amaderado...</p>
-        <button class="view-more">Ver Más</button>
+
+      <!-- Otras Fragancias -->
+      <div class="category" id="otras">
+          <h3>Otras Fragancias</h3>
+          <div class="collection-grid">
+              <div class="product-card">
+                  <h4>Pasha Edition Noire Sport Eau</h4>
+              </div>
+              <div class="product-card">
+                  <h4>Indigo Man EDT</h4>
+              </div>
+              <div class="product-card">
+                  <h4>Light Blue Pour Homme Eau</h4>
+              </div>
+              <div class="product-card">
+                  <h4>FAHRENHEIT</h4>
+              </div>
+              <div class="product-card">
+                  <h4>Polo Blue</h4>
+              </div>
+          </div>
       </div>
-      <div class="product-card">
-        <img src="img/fraganciaHombre3.jpg" alt="Fragancia Hombre 3">
-        <h3>Invictus</h3>
-        <p>Toque fresco y energizante...</p>
-        <button class="view-more">Ver Más</button>
-      </div>
-    </div>
   </section>
 
-
-<!-- Footer -->
-<footer class="footer" id="contacto">
+  <!-- Footer -->
+  <footer class="footer">
     <div class="footer-content">
-      <div class="social-media">
-        <h3>Síguenos en:</h3>
-        <a href="#">Facebook</a>
-        <a href="#">Instagram</a>
-      </div>
-      <div class="contact-info">
-        <h3>Información de Contacto</h3>
-        <p>Dirección: Calle Principal, Ciudad</p>
-        <p>Horario: Lun-Vie 9AM - 6PM</p>
+        <h3>Contacto</h3>
         <p>Teléfono: (123) 456-7890</p>
         <p>Email: contacto@tuempresa.com</p>
-      </div>
     </div>
   </footer>
-  
-  <script src="js/main.js"></script>
 </body>
 </html>

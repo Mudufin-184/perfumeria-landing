@@ -7,133 +7,56 @@
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-
   <!-- Header -->
   <header class="header">
     <nav class="navbar">
       <div class="logo">Perfumería</div>
-      
-      <!-- Botón de menú hamburguesa (para pantallas pequeñas) -->
       <div class="menu-toggle" id="mobile-menu">
           <span class="bar"></span>
           <span class="bar"></span>
           <span class="bar"></span>
       </div>
-    
       <ul class="nav-links" id="nav-menu">
           <li><a href="index.html">Inicio</a></li>
-          <li class="dropdown">
-              <a href="#" class="dropbtn">Portafolio</a>
-              <div class="dropdown-content">
-                  <a href="PortafolioMujer.html">Mujer</a>
-                  <a href="PortafolioHombre.html">Hombre </a>
-                  <a href="PortafolioTotal.html">Todo</a>
-              </div>
-          </li>
           <li><a href="#coleccion">Colección</a></li>
           <li><a href="#promociones">Promociones</a></li>
           <li><a href="#contacto">Contacto</a></li>
-          
+          <li class="dropdown">
+              <a href="#" class="dropbtn">Mujeres</a>
+              <div class="dropdown-content">
+                  <a href="frutales.html">Fragancias Frutales</a>
+                  <a href="florales.html">Fragancias Florales</a>
+                  <a href="frescas.html">Fragancias Frescas</a>
+                  <a href="citricas.html">Fragancias Cítricas</a>
+                  <a href="amaderadas.html">Fragancias Amaderadas</a>
+              </div>
+          </li>
+          <li class="dropdown">
+              <a href="#" class="dropbtn">Portafolio</a>
+              <div class="dropdown-content">
+                  <a href="PortafolioHombre.html">Hombre</a>
+                  <a href="PortafolioTotal.html">Todo</a>
+              </div>
+          </li>
       </ul>    
     </nav>  
   </header>
 
-
-  <!-- Sección de Colección Destacada -->
-  <section class="collection" id="promociones">
-      <h2>Colección Destacada y Promociones</h2>
-      <div class="collection-grid">
-        <!-- Producto 1 -->
-        <div class="product-card">
-          <img src="img/fragancia1.jpg" alt="Can Can">
-          <h3>Can Can</h3>
-          <p>Flor de clementina, nectarina, chispeante y divertida.</p>
-          <button class="view-more">Ver Más</button>
-        </div>
-        <!-- Producto 2 -->
-        <div class="product-card">
-          <img src="img/fragancia2.jpg" alt="Amor Amor">
-          <h3>Amor Amor</h3>
-          <p>Vainilla, bayas rojas, encantadora y romántica.</p>
-          <button class="view-more">Ver Más</button>
-        </div>
-        <!-- Producto 3 -->
-        <div class="product-card">
-          <img src="img/fragancia3.jpg" alt="Mon Paris">
-          <h3>Mon Paris</h3>
-          <p>Fresa, pera, frambuesa, dulce y atrevida.</p>
-          <button class="view-more">Ver Más</button>
-        </div>
-        <!-- Producto 4 -->
-        <div class="product-card">
-          <img src="img/fragancia4.jpg" alt="Insolence">
-          <h3>Insolence</h3>
-          <p>Intenso floral, sofisticado y único.</p>
-          <button class="view-more">Ver Más</button>
-        </div>
-        <!-- Producto 5 -->
-        <div class="product-card">
-          <img src="img/fragancia5.jpg" alt="Be Delicious">
-          <h3>Be Delicious</h3>
-          <p>Manzana verde, fresco y natural.</p>
-          <button class="view-more">Ver Más</button>
-        </div>
-        <!-- Producto 6 -->
-        <div class="product-card">
-          <img src="img/fragancia6.jpg" alt="Love Me Tous">
-          <h3>Love Me Tous</h3>
-          <p>Delicada y elegante, perfecta para cualquier ocasión.</p>
-          <button class="view-more">Ver Más</button>
-        </div>
-        <!-- Producto 7 -->
-        <div class="product-card">
-          <img src="img/fragancia7.jpg" alt="Viva la Juicy">
-          <h3>Viva la Juicy</h3>
-          <p>Notas frutales y florales, para una mujer vibrante.</p>
-          <button class="view-more">Ver Más</button>
-        </div>
-        <!-- Producto 8 -->
-        <div class="product-card">
-          <img src="img/fragancia8.jpg" alt="To Be Woman EDP">
-          <h3>To Be Woman EDP</h3>
-          <p>Esencias modernas, ideal para la mujer contemporánea.</p>
-          <button class="view-more">Ver Más</button>
-        </div>
-        <!-- Producto 9 -->
-        <div class="product-card">
-          <img src="img/fragancia9.jpg" alt="Daisy Eau So Fresh">
-          <h3>Daisy Eau So Fresh</h3>
-          <p>Aroma floral fresco y juvenil, para mujeres optimistas.</p>
-          <button class="view-more">Ver Más</button>
-        </div>
-        <!-- Producto 10 -->
-        <div class="product-card">
-          <img src="img/fragancia10.jpg" alt="Bloom">
-          <h3>Bloom</h3>
-          <p>Rosas frescas, elegancia en cada gota.</p>
-          <button class="view-more">Ver Más</button>
-        </div>
-      </div>
+  <!-- Contenido Principal -->
+  <section class="collection" id="coleccion">
+    <h2>Bienvenidos a la Perfumería</h2>
+    <p>Explora nuestras categorías y descubre fragancias únicas para cada ocasión.</p>
   </section>
 
   <!-- Footer -->
   <footer class="footer" id="contacto">
-      <div class="footer-content">
-        <div class="social-media">
-          <h3>Síguenos en:</h3>
-          <a href="#">Facebook</a>
-          <a href="#">Instagram</a>
-        </div>
-        <div class="contact-info">
-          <h3>Información de Contacto</h3>
-          <p>Dirección: Calle Principal, Ciudad</p>
-          <p>Horario: Lun-Vie 9AM - 6PM</p>
-          <p>Teléfono: (123) 456-7890</p>
-          <p>Email: contacto@tuempresa.com</p>
-        </div>
-      </div>
+    <div class="footer-content">
+        <h3>Contacto</h3>
+        <p>Teléfono: (123) 456-7890</p>
+        <p>Email: contacto@tuempresa.com</p>
+    </div>
   </footer>
-  
+
   <script src="js/main.js"></script>
 </body>
 </html>
