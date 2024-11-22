@@ -176,8 +176,8 @@ body {
 /* Hero Section */
 .hero {
   width: 100%; /* Asegura que el contenedor ocupe todo el ancho */
-  height: 100vh;
-  background: url('../img/principal-foto-bg.png') no-repeat center;
+  height: 90vh;
+  background: url('../img/bg-principal.jpg') no-repeat center;
   background-size: cover;
   display: flex;
   justify-content: center; /* Centra el contenido */
@@ -522,3 +522,140 @@ body {
     }
   }
   
+
+/* Sección Perfume Personalizado */
+.personalized-perfume {
+  background-color: #f9f9f9;
+  padding: 50px 20px;
+  font-family: 'Open Sans', sans-serif;
+}
+
+.personalized-perfume .container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.personalized-perfume h2 {
+  font-size: 2.5rem;
+  color: #ca5d1e; /* Color principal */
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+/* Ajuste para alinear contenido en una sola línea */
+.personalized-perfume .content {
+  display: flex;
+  gap: 20px;
+  align-items: flex-start; /* Alineación superior para los elementos */
+  justify-content: space-between; /* Espaciado uniforme entre los elementos */
+  flex-wrap: nowrap; /* Evitar que los elementos salten a otra línea */
+}
+
+.personalized-perfume .description {
+  flex: 2; /* Más espacio para el texto */
+  font-size: 1.1rem;
+  color: #333;
+  line-height: 1.8;
+}
+
+.personalized-perfume .description strong {
+  color: #ca5d1e; /* Destacar el texto */
+}
+
+.personalized-perfume .image {
+  flex: 1; /* Tamaño más compacto para la imagen */
+  text-align: center;
+}
+
+.personalized-perfume .image img {
+  max-width: 100%;
+  height: auto;
+  max-height: 400px; /* Restringir altura máxima */
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Ajustar formulario para una sola línea */
+.personalized-perfume .customization-form {
+  flex: 2; /* Igual proporción que la descripción */
+  margin-top: 0; /* Alinear con los demás elementos */
+}
+
+.personalized-perfume .customization-form h3 {
+  font-size: 1.8rem;
+  color: #333;
+  margin-bottom: 15px;
+  text-align: left; /* Alinear con el formulario */
+}
+
+.personalized-perfume .customization-form form {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+  align-items: center;
+}
+
+.personalized-perfume .customization-form label {
+  flex: 1 1 100%; /* Etiquetas en línea completa */
+  font-size: 1rem;
+  color: #666;
+}
+
+.personalized-perfume .customization-form input[type="text"],
+.personalized-perfume .customization-form select {
+  flex: 1 1 calc(50% - 10px); /* Campos en la misma línea */
+  padding: 10px;
+  font-size: 1rem;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+
+.personalized-perfume .customization-form button {
+  flex: 1 1 100%; /* Botón a lo ancho */
+  background-color: #ca5d1e;
+  color: #fff;
+  font-size: 1rem;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.personalized-perfume .customization-form button:hover {
+  background-color: #a74c18;
+}
+
+/* Responsivo */
+@media (max-width: 768px) {
+  .personalized-perfume .content {
+    flex-wrap: wrap; /* Permitir salto de línea en pantallas pequeñas */
+    justify-content: center;
+    text-align: center;
+  }
+
+  .personalized-perfume .description {
+    flex: 1 1 100%; /* Descripción a toda la anchura */
+    font-size: 1rem;
+  }
+
+  .personalized-perfume .image {
+    flex: 1 1 100%; /* Imagen a toda la anchura */
+    margin-top: 20px;
+  }
+
+  .personalized-perfume .customization-form {
+    flex: 1 1 100%; /* Formulario a toda la anchura */
+    margin-top: 20px;
+  }
+
+  .personalized-perfume .customization-form form {
+    flex-direction: column; /* Elementos apilados en pantallas pequeñas */
+    gap: 20px;
+  }
+}
+.olfactory-section {
+  padding: 20px 40px;
+  width: 650px;
+  height: 450px;
+}
